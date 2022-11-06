@@ -30,6 +30,10 @@ header {
   margin-bottom: 100vh;
 }
 
+input, textarea {
+  outline: none;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -107,6 +111,7 @@ main {
 .description__content p {
   font-size: 17px;
   color: var(--color-paragraph);
+  font-family: var(--font-content);
 }
 
 .skills {
@@ -168,9 +173,10 @@ main {
   color: var(--color-title);
 }
 
-.suscribe__content {
+.suscribe__content p{
   font-size: 17px;
   color: var(--color-paragraph);
+  font-family: var(--font-content);
 }
 
 .suscribe iframe {
