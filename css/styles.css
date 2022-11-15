@@ -10,21 +10,9 @@
 html {
   background: linear-gradient(
     -120deg,
-    var(--degradated-light) 0%,
-    var(--degradated-dark) 100%
+    #e2d2a1 0%,
+    #cd9477 100%
   );
-}
-
-:root {
-  --degradated-light: #e2d2a1;
-  --degradated-dark: #cd9477;
-  --color-title: #908645;
-  --color-scrollbar: #afa973;
-  --color-paragraph: #ae8973;
-  --color-nav: #e2d2a1;
-  --color-footer: #cd9477;
-  --font-title: "Erotique Alternate Trial", sans-serif;
-  --font-content: quincy-cf, serif;
 }
 
 #container {
@@ -40,6 +28,17 @@ textarea {
   outline: none;
 }
 
+h2, h3 { 
+  font-family: "Erotique Alternate Trial", sans-serif;
+}
+
+p {
+  font-family:  quincy-cf, serif;
+  font-size: 18px;
+  color: #af7b6a;
+  line-height: 22px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -47,7 +46,7 @@ textarea {
   width: 100%;
   padding: 30px 150px 30px 150px;
   background-color: transparent;
-  font-family: var(--font-content);
+  font-family: quincy-cf, serif;
   font-size: 15px;
   font-weight: 400;
   position: relative;
@@ -71,7 +70,7 @@ textarea {
 
 .navbar__pages a {
   text-decoration: none;
-  color: var(--color-nav);
+  color: #e2d2a1;
   padding: 10px 20px 10px 20px;
 }
 
@@ -93,7 +92,7 @@ main {
   justify-content: center;
 }
 
-.description {
+.descripcion {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,62 +101,60 @@ main {
   padding-right: 150px;
 }
 
-.description img {
+.descripcion img {
   width: 220px;
   margin-right: 50px;
 }
 
-.description__content h2 {
-  font-family: var(--font-title);
+.descripcion__contenido h2 {
   font-size: 70px;
   margin-bottom: 10px;
-  color: var(--color-title);
+  color: #908645;
 }
 
-.description__content p {
+/* .description__content p {
   font-size: 17px;
-  color: var(--color-paragraph);
-  font-family: var(--font-content);
-}
+  color: #ae8973;
+} */
 
-.skills {
+.habilidades {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-.skills__content {
+.habilidades__contenido {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 300px;
 }
 
-.skills__content img {
+.habilidades__contenido img {
   width: 300px;
   margin-bottom: 30px;
 }
 
-.skills__content_text {
+.habilidades__contenido_texto {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 250px;
+  width: 300px;
+  padding: 0 10px 0 10px;
+  font-weight: 500;
 }
 
-.skills__content h3 {
-  font-family: var(--font-title);
+.habilidades__contenido h3 {
   font-size: 30px;
-  color: var(--color-title);
+  color: #908645;
   height: 60px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-.skills__content p {
+.habilidades__contenido p {
   height: 120px;
-  font-family: var(--font-content);
-  color: var(--color-paragraph);
+  color:#af7b6a;
 }
 
 .suscribe {
@@ -166,30 +163,29 @@ main {
   padding-left: 150px;
   padding-right: 150px;
   margin-bottom: 120px;
+  margin-top: 40px;
 }
 
-.suscribe__content {
+.suscribe__contenido {
   width: 50%;
+  padding-left: 10px;
 }
 
-.suscribe__content h2 {
+.suscribe__contenido h2 {
   font-size: 70px;
-  font-family: var(--font-title);
   margin-bottom: 20px;
-  color: var(--color-title);
+  color: #908645;
 }
 
-.suscribe__content p {
-  font-size: 17px;
-  color: var(--color-paragraph);
-  font-family: var(--font-content);
-}
+.suscribe__contenido p {
+padding-right: 10px;
+} 
 
 .suscribe iframe {
   margin-left: 30px;
 }
 
-.about_me {
+.acerca_de_me {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -198,39 +194,38 @@ main {
   padding-right: 150px;
 }
 
-.about_me img {
+.acerca_de_me img {
   width: 220px;
   margin-left: 50px;
 }
 
-.about_me__content h2 {
-  font-family: var(--font-title);
+.acerca_de_me__contenido h2 {
   font-size: 80px;
   margin-bottom: 20px;
-  color: var(--color-footer);
+  color: #c8896a;
 }
 
-.about_me__content p {
-  font-family: var(--font-content);
+/* .about_me__content p {
   font-size: 17px;
-  color: var(--color-paragraph);
-}
+  color: #ae8973;
+} */
 
-.phrase {
+.frase {
   padding-left: 150px;
   padding-right: 150px;
   margin-bottom: 80px;
 }
 
-.phrase p {
-  background-color: var(--color-nav);
-  padding: 20px;
-  font-size: 33px;
-  font-family: var(--font-content);
-  color: var(--color-footer);
+.frase p {
+  background-color: #e2d2a1;
+  padding: 25px;
+  padding-left: 28px;
+  font-size: 25px;
+  color: #cd9477;
+  line-height: 27px;
 }
 
-.experience {
+.experiencia {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -239,18 +234,18 @@ main {
   margin-bottom: 120px;
 }
 
-.experience img {
+.experiencia img {
   width: 400px;
 }
 
-.experience__content {
+.experiencia__contenido {
   margin-left: 50px;
   font-size: 17px;
-  font-family: var(--font-content);
-  color: var(--color-paragraph);
+  color: #ae8973;
+  padding-right: 5px;
 }
 
-.contact {
+.contacto {
   width: 100%;
   padding-left: 150px;
   padding-right: 150px;
@@ -258,19 +253,18 @@ main {
   margin-bottom: 100px;
 }
 
-.contact h2 {
-  font-family: var(--font-title);
+.contacto h2 {
   font-size: 65px;
   margin-bottom: 20px;
-  color: var(--color-title);
+  color: #908645;
 }
 
-.contact__content {
+.contacto__contenido {
   display: flex;
   align-items: center;
 }
 
-.contact__content form {
+.contacto__contenido form {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -286,40 +280,42 @@ main {
 
 .form__control label,
 input {
-  font-family: var(--font-content);
+  font-family: quincy-cf, serif;
 }
 
 .form__control label {
   margin-bottom: 10px;
   font-size: 18px;
-  color: var(--color-paragraph);
+  color:#af7b6a;
 }
 
 .form__control input {
   padding: 10px;
   border: 0;
-  background-color: var(--color-nav);
-  color: var(--color-title);
+  background-color: #e2d2a1;
+  color: #908645;
 }
 ::placeholder {
-  opacity: 0.7;
+  opacity: 0.5;
+  color:#af7b6a;
 }
 
 .form__control textarea {
   padding: 10px;
   border: 0;
-  background-color: var(--color-nav);
-  color: var(--color-title);
+  background-color: #e2d2a1;
+  color:#af7b6a ;
   overflow-y: scroll;
   margin-bottom: 10px;
+  font-family: quincy-cf, serif;
 }
 ::-webkit-scrollbar {
   height: 50px;
   width: 20px;
-  background: var(--color-scrollbar);
+  background: #afa973;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-title);
+  background: #908645;
 }
 
 .form__submit {
@@ -328,13 +324,13 @@ input {
 }
 
 .form__submit input[type="submit"] {
+  font-family: "Erotique Alternate Trial", sans-serif;
   padding: 5px 20px;
   width: 150px;
   font-size: 30px;
   margin-right: 5px;
   border: 0;
-  background-color: var(--color-title);
-  color: var(--color-nav);
+  background-color: #908645;
   opacity: 0.7;
   cursor: pointer;
   transition: all 0.4s;
@@ -342,18 +338,26 @@ input {
 .form__submit input[type="submit"]:hover {
   opacity: 1;
 }
+.form__submit input[value="enviar"] {
+  color: #e2d2a1;
+}
 
-.contact__data {
+.contacto__datos {
   display: flex;
   flex-direction: column;
   gap: 40px;
   justify-content: center;
-  color: var(--color-paragraph);
-  font-family: var(--font-content);
-  margin-top: -100px;
+  color: #af7b6a;
+  font-family: quincy-cf, serif;
+  margin-top: -120px;
 }
 
-.location iframe {
+.contacto__datos h3{
+  font-family: quincy-cf, serif;
+  margin-bottom: 5px;
+}
+
+.mapa_google iframe {
   width: 900px;
   height: 450px;
   margin-bottom: 120px;
@@ -365,37 +369,38 @@ footer {
   align-items: center;
   width: 100%;
   padding: 30px 150px 30px 150px;
-  background-color: var(--color-nav);
-  color: var(--color-footer);
-  font-family: var(--font-content);
-  font-size: 15px;
-  font-weight: 400;
+  background-color: #e2d2a1;
+  color: #cd9477;
+  font-family:  quincy-cf, serif;
+  font-size: 17px;
+  font-weight: 350;
 }
 
 footer img {
   width: 120px;
 }
 
-.footer__content {
+.footer__contenido {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.footer__content h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.footer__contenido h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-family: quincy-cf, serif;
 }
 
-.footer__content ul {
+.footer__contenido ul {
   list-style: none;
 }
 
-.footer__content li {
-  line-height: 17px;
+.footer__contenido li {
+  line-height: 19px;
 }
 
-.footer__content ul a {
+.footer__contenido ul a {
   text-decoration: none;
-  color: var(--color-footer);
+  color: #cd9477;
 }
